@@ -7,8 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-yum_repository "microsoft-dsc" do
-	template '/etc/yum.repos.d/microsoft.repo'
+template '/etc/yum.repos.d/microsoft.repo' do
 	source 'microsoft_repo.erb'
 	owner 'root'
 	group 'root'
