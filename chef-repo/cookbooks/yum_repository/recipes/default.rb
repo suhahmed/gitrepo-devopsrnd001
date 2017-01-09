@@ -10,8 +10,8 @@
 yum_repository "microsoft-dsc" do
 	description "Microsoft Repo"
 	baseurl "http://10.121.48.123/microsoft/"
-	enabled "True"
-	gpgcheck "False"
+	enabled "true"
+	gpgcheck "false"
 	action :create
 end
 
