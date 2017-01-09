@@ -8,19 +8,10 @@
 #
 
 yum_repository "microsoft-dsc" do
-	description "Microsoft Repo"
-	baseurl "http://10.121.48.123/microsoft/"
-	enabled "true"
-	gpgcheck "false"
-	action :create
+	template '/etc/yum.repos.d/microsoft.repo'
+	source 'microsoft_repo.erb'
+	owner 'root'
+	group 'root'
+	mode '0644'
 end
 
-yum_package "omi-1.1.0.ssl_100.x64.rpm" do
-	action :install
-	flush_cache [:before]
-	end
-
-yum_package "dsc-1.1.1-294.ssl_100.x64.rpm" do
-	action :install
-	flush_cache [:before]
-	end
