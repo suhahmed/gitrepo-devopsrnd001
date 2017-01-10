@@ -8,6 +8,6 @@ client_key               "#{current_dir}/suhahmed.pem"
 validation_client_name   "devops-lab-validator"
 validation_key           "#{current_dir}/devops-lab-validator.pem"
 chef_server_url          "https://devopsrnd001.lab.com/organizations/devops-lab"
-#cookbook_path            ["#{current_dir}/../cookbooks"]
-cookbook_path            ["/etc/chef/cserver-gitrepo/cookbooks"]
+cookbook_path            ["#{current_dir}/../cookbooks"]
+#cookbook_path            ["/etc/chef/cserver-gitrepo/cookbooks"]
 knife[:editor]="vim"
