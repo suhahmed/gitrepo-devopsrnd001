@@ -10,7 +10,8 @@
   },
   "chef_type": "role",
   "run_list": [
-
+    "recipe[yum_repo::default]",
+    "recipe[yum_repo::dsc_pkg_install]"
   ],
   "env_run_lists": {
 

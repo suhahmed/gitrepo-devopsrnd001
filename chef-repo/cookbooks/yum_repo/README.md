@@ -1,4 +1,4 @@
-# yum_repository Cookbook
+# yum_repo Cookbook
 
 TODO: Enter the cookbook description here.
 
@@ -20,14 +20,14 @@ e.g.
 
 ### Cookbooks
 
-- `toaster` - yum_repository needs toaster to brown your bagel.
+- `toaster` - yum_repo needs toaster to brown your bagel.
 
 ## Attributes
 
 TODO: List your cookbook attributes here.
 
 e.g.
-### yum_repository::default
+### yum_repo::default
 
 <table>
   <tr>
@@ -37,7 +37,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['yum_repository']['bacon']</tt></td>
+    <td><tt>['yum_repo']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -46,18 +46,18 @@ e.g.
 
 ## Usage
 
-### yum_repository::default
+### yum_repo::default
 
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `yum_repository` in your node's `run_list`:
+Just include `yum_repo` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[yum_repository]"
+    "recipe[yum_repo]"
   ]
 }
 ```
